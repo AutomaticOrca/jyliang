@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import Balancer from 'react-wrap-balancer'
 import TypeWriter from 'typewriter-effect'
 
-import { SparkleIcon, UserSecurityIcon } from '~/assets'
+import { SparkleIcon } from '~/assets'
 import { SocialLink } from '~/components/links/SocialLink'
 
 function Developer() {
@@ -40,14 +40,14 @@ function OCD() {
   )
 }
 
-function Founder() {
-  return (
-    <span className="group inline-flex items-center">
-      <UserSecurityIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" />
-      <span>Life Enthusiast</span>
-    </span>
-  )
-}
+// function Founder() {
+//   return (
+//     <span className="group inline-flex items-center">
+//       <UserSecurityIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" />
+//       <span>Life Enthusiast</span>
+//     </span>
+//   )
+// }
 
 export function Headline() {
   return (
