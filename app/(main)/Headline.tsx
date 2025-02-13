@@ -5,7 +5,6 @@ import Balancer from 'react-wrap-balancer'
 import TypeWriter from 'typewriter-effect'
 
 import { SparkleIcon, UserSecurityIcon } from '~/assets'
-import { PeekabooLink } from '~/components/links/PeekabooLink'
 import { SocialLink } from '~/components/links/SocialLink'
 
 function Developer() {
