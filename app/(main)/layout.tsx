@@ -12,6 +12,7 @@ export default function BlogLayout({
 }: {
   children: React.ReactNode
 }) {
+    console.log('Rendering layout.tsx');
   return (
     <>
       <div className="pointer-events-none fixed inset-0 select-none bg-[url('/grid-black.svg')] bg-top bg-repeat dark:bg-[url('/grid.svg')]" />
