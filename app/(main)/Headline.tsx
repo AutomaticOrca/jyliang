@@ -26,7 +26,7 @@ function Designer() {
         <span className="absolute -bottom-[3.5px] -left-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
         <span className="absolute -right-[3.5px] -top-[3.5px] size-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
       </span>
-      System Thinker
+      Life Explorer
     </span>
   )
 }
@@ -35,7 +35,7 @@ function OCD() {
   return (
     <span className="group inline-flex items-center">
       <SparkleIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
-      <span>Explorer</span>
+      <span>Dreamer</span>
     </span>
   )
 }
@@ -65,8 +65,7 @@ export function Headline() {
       >
         <Developer />
         <span className="block h-1" />
-        <Designer />
-        <span className="block h-1" />
+        <Designer /> &nbsp;
         <OCD />
       </motion.h1>
       <motion.div
@@ -89,8 +88,8 @@ export function Headline() {
           }}
         />
         <Balancer>
-          This is Joyce Liang. Always wanna be a better software engineer and
-          also want to make this world a better place.
+          This is Joyce Liang. Always wanna be a better software
+          engineer and also want to make this world a better place .
         </Balancer>
       </motion.div>
       <motion.div
@@ -118,7 +117,7 @@ export function Headline() {
 
         <SocialLink
           href="mailto:liangjiaying1013@outlook.com"
-          aria-label="我的邮箱"
+          aria-label="My Email"
           platform="mail"
         />
       </motion.div>

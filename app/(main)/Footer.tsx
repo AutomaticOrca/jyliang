@@ -10,7 +10,6 @@ import { navigationItems } from '~/config/nav'
 import { db } from '~/db'
 import { subscribers } from '~/db/schema'
 import { env } from '~/env.mjs'
-import { prettifyNumber } from '~/lib/math'
 import { redis } from '~/lib/redis'
 
 import { Newsletter } from './Newsletter'
@@ -55,9 +54,9 @@ async function TotalPageViews() {
   return (
     <span className="flex items-center justify-center gap-1 text-xs text-zinc-500 dark:text-zinc-400 md:justify-start">
       <UsersIcon className="h-4 w-4" />
-      <span title={`${Intl.NumberFormat('en-US').format(views)}次浏览`}>
-        总浏览量&nbsp;
-        <span className="font-medium">{prettifyNumber(views, true)}</span>
+      <span title={`${Intl.NumberFormat('en-US').format(views)} views`}>
+        Total Views &nbsp;
+        <span className="font-medium">{views}</span>
       </span>
     </span>
   )
@@ -90,7 +89,7 @@ async function LastVisitorInfo() {
     <span className="flex items-center justify-center gap-1 text-xs text-zinc-500 dark:text-zinc-400 md:justify-start">
       <CursorClickIcon className="h-4 w-4" />
       <span>
-        最近访客来自&nbsp;
+        Recent Visitors From&nbsp;
         {[lastVisitor.city, lastVisitor.country].filter(Boolean).join(', ')}
       </span>
       <span className="font-medium">{lastVisitor.flag}</span>
@@ -116,8 +115,8 @@ export async function Footer() {
             </div>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <p className="text-sm text-zinc-500/80 dark:text-zinc-400/80">
-                &copy; {new Date().getFullYear()} Cali Castle. 网站已开源：
-                <PeekabooLink href="https://github.com/CaliCastle/cali.so">
+                &copy; {new Date().getFullYear()} Joyce Land. Open Source Project：
+                <PeekabooLink href="https://github.com/AutomaticOrca/jyliang">
                   GitHub
                 </PeekabooLink>
               </p>
