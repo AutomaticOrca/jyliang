@@ -9,6 +9,7 @@ import {
   BilibiliIcon,
   GitHubIcon,
   type IconProps,
+  LinkedinIcon,
   MailIcon,
   TelegramIcon,
   TwitterIcon,
@@ -19,6 +20,7 @@ import { Tooltip } from '~/components/ui/Tooltip'
 type IconType = (props: IconProps) => JSX.Element
 type Platform =
   | 'github'
+  | 'linkedin'
   | 'twitter'
   | 'youtube'
   | 'telegram'
@@ -32,6 +34,11 @@ type PlatformInfo = {
 }
 const iconMapper: { [key: string]: PlatformInfo } = {
   '(?:github.com)': { icon: GitHubIcon, platform: 'github', label: 'GitHub' },
+  '(?:linkedin.com)': {
+    icon: LinkedinIcon,
+    platform: 'linkedin',
+    label: 'Linkedin',
+  },
   '((?:t.co)|(?:twitter.com))': {
     icon: TwitterIcon,
     platform: 'twitter',
@@ -52,7 +59,7 @@ const iconMapper: { [key: string]: PlatformInfo } = {
     platform: 'bilibili',
     label: '哔哩哔哩',
   },
-  '(?:mailto:)': { icon: MailIcon, platform: 'mail', label: '邮箱地址' },
+  '(?:mailto:)': { icon: MailIcon, platform: 'mail', label: 'Email' },
   '(?:feed.xml)': { icon: AtomIcon, platform: 'rss', label: 'RSS 订阅' },
 }
 

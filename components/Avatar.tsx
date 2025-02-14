@@ -33,7 +33,7 @@ function AvatarImage({
 }: AvatarImageProps) {
   return (
     <Link
-      aria-label="主页"
+      aria-label="Home"
       className={clsxm(className, 'pointer-events-auto')}
       href={href ?? '/'}
       {...props}

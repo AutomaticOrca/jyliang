@@ -17,7 +17,7 @@ export async function BlogPosts({ limit = 5 }) {
       views = await redis.mget<number[]>(...postIdKeys)
     }
   }
-
+  console.log('Rendering BlogPosts component');
   return (
     <>
       {posts.map((post, idx) => (

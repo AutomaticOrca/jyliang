@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     default: seo.title,
   },
   description: seo.description,
-  keywords: 'Cali,Cali Castle,郭晓楠,佐玩,创始人,CEO,开发者,设计师,细节控,创新',
+  keywords: 'JY,JyLiang,JoyceLiang,SoftwareEngineer,Developer',
   manifest: '/site.webmanifest',
   robots: {
     index: true,
@@ -34,17 +34,17 @@ export const metadata: Metadata = {
   openGraph: {
     title: {
       default: seo.title,
-      template: '%s | Cali Castle',
+      template: '%s | JY Liang',
     },
     description: seo.description,
-    siteName: 'Cali Castle',
-    locale: 'zh_CN',
+    siteName: 'JY Liang',
+    locale: 'en_AU',
     type: 'website',
-    url: 'https://cali.so',
+    url: 'https://jyliang.vercel.app/',
   },
   twitter: {
-    site: '@thecalicastle',
-    creator: '@thecalicastle',
+    site: '@JyLiang__',
+    creator: '@JyLiang__',
     card: 'summary_large_image',
     title: seo.title,
     description: seo.description,
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: url('/'),
     types: {
-      'application/rss+xml': [{ url: 'rss', title: 'RSS 订阅' }],
+      'application/rss+xml': [{ url: 'rss', title: 'RSS subscription' }],
     },
   },
 }
