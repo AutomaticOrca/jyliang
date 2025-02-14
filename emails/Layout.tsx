@@ -44,41 +44,27 @@ export default function Layout({
               />
               <Text className="text-center">
                 <Link
-                  href="https://cali.so"
+                  href="https://jyliang.vercel.app/"
                   className="text-zinc-700 underline"
                 >
-                  <strong>Cali Castle</strong>
+                  <strong>Joyce Land</strong>
                 </Link>
                 <br />
-                开发者、设计师、细节控、创始人
+                Developer, Life Explorer, Dreamer
               </Text>
               <Text className="text-center">
                 <Link
-                  href="https://cali.so/twitter"
+                  href="https://www.linkedin.com/in/jyliang1013/"
                   className="text-xs text-zinc-600 underline"
                 >
-                  Twitter
+                  LinkedIn
                 </Link>{' '}
                 |&nbsp;
                 <Link
-                  href="https://cali.so/youtube"
-                  className="text-xs text-zinc-600 underline"
-                >
-                  YouTube
-                </Link>{' '}
-                |&nbsp;
-                <Link
-                  href="https://cali.so/github"
+                  href="https://github.com/AutomaticOrca"
                   className="text-xs text-zinc-600 underline"
                 >
                   GitHub
-                </Link>{' '}
-                |&nbsp;
-                <Link
-                  href="https://cali.so/bilibili"
-                  className="text-xs text-zinc-600 underline"
-                >
-                  哔哩哔哩
                 </Link>
               </Text>
             </Section>

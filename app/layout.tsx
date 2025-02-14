@@ -7,14 +7,13 @@ import type { Metadata, Viewport } from 'next'
 
 import { ThemeProvider } from '~/app/(main)/ThemeProvider'
 import { url } from '~/lib'
-import { zhCN } from '~/lib/clerkLocalizations'
 import { sansFont } from '~/lib/font'
 import { seo } from '~/lib/seo'
 
 export const metadata: Metadata = {
   metadataBase: seo.url,
   title: {
-    template: '%s | Cali Castle',
+    template: '%s | Joyce Land',
     default: seo.title,
   },
   description: seo.description,
@@ -70,7 +69,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <ClerkProvider localization={zhCN}>
+    <ClerkProvider>
       <html
         lang="zh-CN"
         className={`${sansFont.variable} m-0 h-full p-0 font-sans antialiased`}
