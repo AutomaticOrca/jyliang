@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Balancer from 'react-wrap-balancer'
 import TypeWriter from 'typewriter-effect'
 
 import { SparkleIcon } from '~/assets'
@@ -87,10 +86,11 @@ export function Headline() {
             loop: true,
           }}
         />
-        <Balancer>
-          This is Joyce Liang. Always wanna be a better software
-          engineer and also want to make this world a better place .
-        </Balancer>
+        <p>
+          This is Joyce Liang. <br />
+          Always wanna be a better software engineer, <br />
+          want to make this world a better place .
+        </p>
       </motion.div>
       <motion.div
         className="mt-6 flex gap-6"
