@@ -87,10 +87,10 @@ export function Headline() {
             loop: true,
           }}
         />
-        <Balancer>
+        <p>
           This is Joyce Liang. Always wanna be a better software
           engineer and also want to make this world a better place .
-        </Balancer>
+        </p>
       </motion.div>
       <motion.div
         className="mt-6 flex gap-6"

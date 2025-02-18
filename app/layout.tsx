@@ -13,7 +13,7 @@ import { seo } from '~/lib/seo'
 export const metadata: Metadata = {
   metadataBase: seo.url,
   title: {
-    template: '%s | Joyce Land',
+    template: '%s | Joyce Liang',
     default: seo.title,
   },
   description: seo.description,
@@ -33,10 +33,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: {
       default: seo.title,
-      template: '%s | JY Liang',
+      template: '%s | Joyce Land',
     },
     description: seo.description,
-    siteName: 'JY Liang',
+    siteName: 'Joyce Liang',
     locale: 'en_AU',
     type: 'website',
     url: 'https://jyliang.vercel.app/',
